@@ -10,7 +10,7 @@ export default function Home() {
       <Hero
         title="L’INJECTION PLASTIQUE AU SERVICE DE VOS BESOINS"
         subtitle="Solutions plastiques innovantes et responsables"
-        image="/images/hero.jpg"
+        image="/hero.webp"
       />
 
       {/* Sections d’accueil : adapte les textes depuis le site d’origine */}

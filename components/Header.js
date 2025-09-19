@@ -18,13 +18,13 @@ export default function Header() {
           <Link href="/parc-machines" className="hover:text-brand-green">Parc machines</Link>
           <Link href="/engagements" className="hover:text-brand-green">Engagements</Link>
           <Link href="/contact" className="hover:text-brand-green">Contact</Link>
-          <Link
-  href="/contact"
-  className="ml-2 inline-flex items-center justify-center rounded-lg px-4 py-2
+                  <Link
+                      href="/contact"
+                      className="ml-2 inline-flex items-center justify-center rounded-lg px-4 py-2
              font-semibold text-white bg-red-600 hover:bg-red-700
              focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600
              transition"
->
+                  >
             Demander un devis
           </Link>
         </nav>
