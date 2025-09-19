@@ -1,46 +1,64 @@
 import Layout from "../components/Layout";
-import Image from "next/image";
+import Hero from "../components/Hero";
 
 export default function Home() {
   return (
-    <Layout>
-      {/* HERO */}
-      <section className="relative h-[470px] flex items-center justify-center text-center text-white">
-        {/* Image de fond */}
-        <Image
-          src="/factory.webp" // mets ici l'image d'origine récupérée
-          alt="Dody Plast"
-          fill
-          className="object-cover brightness-60 background-image"
-          priority
-        />
-         {/* OVERLAY GRADIENT */}
-  <div className="absolute inset-0 bg-gradient-to-tr from-[#0058aa] to-[#009cff] opacity-60 transition-all duration-300 rounded-none" />
-        {/* Texte et bouton */}
-        <div className="relative z-10 px-4">
-          <h2 className="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow">
-          Solutions d'emballages personnalisées
-          </h2>
-          <p className="max-w-2xl mx-auto text-lg md:text-xl mb-6">
-          Fabricant français d’emballages depuis 1959, nous mettons toute notre expérience à votre disposition pour vous offrir un service sur mesure adapté à vos contraintes
+    <Layout
+      title="Injection plastique au service de vos besoins"
+      description="Fabricant de solutions plastiques responsables : produits, savoir-faire, engagements, parc machines."
+    >
+      <Hero
+        title="L’INJECTION PLASTIQUE AU SERVICE DE VOS BESOINS"
+        subtitle="Solutions plastiques innovantes et responsables"
+        image="/images/hero.jpg"
+      />
+
+      {/* Sections d’accueil : adapte les textes depuis le site d’origine */}
+      <section className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-8">
+        <div className="bg-white rounded-xl shadow p-8">
+          <h3 className="text-xl font-bold text-brand-green mb-2">Nos produits</h3>
+          <p className="text-gray-700">
+            {/* COLLER TEXTE D’ORIGINE PRODUITS */}
+            Une gamme de pièces plastiques adaptées à vos besoins.
           </p>
-          <a
-            href="/contact"
-            className="inline-block bg-red-700 hover:bg-red-800 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition"
-          >
-            Demander un devis
+          <a href="/produits" className="text-brand-green font-semibold mt-4 inline-block link-underline">
+            Découvrir
+          </a>
+        </div>
+        <div className="bg-white rounded-xl shadow p-8">
+          <h3 className="text-xl font-bold text-brand-green mb-2">Notre savoir-faire</h3>
+          <p className="text-gray-700">
+            {/* COLLER TEXTE D’ORIGINE SAVOIR-FAIRE */}
+            Conception, injection, contrôle qualité.
+          </p>
+          <a href="/savoir-faire" className="text-brand-green font-semibold mt-4 inline-block link-underline">
+            En savoir plus
+          </a>
+        </div>
+        <div className="bg-white rounded-xl shadow p-8">
+          <h3 className="text-xl font-bold text-brand-green mb-2">Engagements</h3>
+          <p className="text-gray-700">
+            {/* COLLER TEXTE D’ORIGINE ENGAGEMENTS / CERTIFICATIONS */}
+            Démarche environnementale et certifications.
+          </p>
+          <a href="/engagements" className="text-brand-green font-semibold mt-4 inline-block link-underline">
+            Voir nos engagements
           </a>
         </div>
       </section>
 
-      {/* SECTION TEXTE (Nos engagements / Nos produits...) */}
-      <section className="py-20 px-6 max-w-6xl mx-auto text-center">
-        <h3 className="text-3xl font-bold text-green-700 mb-8">Nos Produits</h3>
-        <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto">
-          Nous concevons et fabriquons une gamme complète de solutions plastiques
-          de qualité, adaptées à vos besoins industriels et respectueuses de
-          l’environnement.
-        </p>
+      {/* Bloc certifications / logos */}
+      <section className="bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 py-14">
+          <h3 className="text-2xl font-bold text-center mb-8">Nos certifications & labels</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+            {/* Remplacer par les logos du site original */}
+            <img src="/images/certif1.png" alt="Certification 1" className="h-14 mx-auto" />
+            <img src="/images/certif2.png" alt="Certification 2" className="h-14 mx-auto" />
+            <img src="/images/certif3.png" alt="Certification 3" className="h-14 mx-auto" />
+            <img src="/images/certif4.png" alt="Certification 4" className="h-14 mx-auto" />
+          </div>
+        </div>
       </section>
     </Layout>
   );
