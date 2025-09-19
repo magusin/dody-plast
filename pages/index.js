@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -21,9 +22,9 @@ export default function Home() {
             {/* COLLER TEXTE D’ORIGINE PRODUITS */}
             Une gamme de pièces plastiques adaptées à vos besoins.
           </p>
-          <a href="/produits" className="text-brand-green font-semibold mt-4 inline-block link-underline">
+          <Link href="/produits" className="text-brand-green font-semibold mt-4 inline-block link-underline">
             Découvrir
-          </a>
+          </Link>
         </div>
         <div className="bg-white rounded-xl shadow p-8">
           <h3 className="text-xl font-bold text-brand-green mb-2">Notre savoir-faire</h3>
@@ -31,9 +32,9 @@ export default function Home() {
             {/* COLLER TEXTE D’ORIGINE SAVOIR-FAIRE */}
             Conception, injection, contrôle qualité.
           </p>
-          <a href="/savoir-faire" className="text-brand-green font-semibold mt-4 inline-block link-underline">
+          <Link href="/savoir-faire" className="text-brand-green font-semibold mt-4 inline-block link-underline">
             En savoir plus
-          </a>
+          </Link>
         </div>
         <div className="bg-white rounded-xl shadow p-8">
           <h3 className="text-xl font-bold text-brand-green mb-2">Engagements</h3>
@@ -41,9 +42,9 @@ export default function Home() {
             {/* COLLER TEXTE D’ORIGINE ENGAGEMENTS / CERTIFICATIONS */}
             Démarche environnementale et certifications.
           </p>
-          <a href="/engagements" className="text-brand-green font-semibold mt-4 inline-block link-underline">
+          <Link href="/engagements" className="text-brand-green font-semibold mt-4 inline-block link-underline">
             Voir nos engagements
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -53,10 +54,10 @@ export default function Home() {
           <h3 className="text-2xl font-bold text-center mb-8">Nos certifications & labels</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
             {/* Remplacer par les logos du site original */}
-            <img src="/images/certif1.png" alt="Certification 1" className="h-14 mx-auto" />
-            <img src="/images/certif2.png" alt="Certification 2" className="h-14 mx-auto" />
-            <img src="/images/certif3.png" alt="Certification 3" className="h-14 mx-auto" />
-            <img src="/images/certif4.png" alt="Certification 4" className="h-14 mx-auto" />
+            <Image src="/images/certif1.png" alt="Certification 1" className="h-14 mx-auto" />
+            <Image src="/images/certif2.png" alt="Certification 2" className="h-14 mx-auto" />
+            <Image src="/images/certif3.png" alt="Certification 3" className="h-14 mx-auto" />
+            <Image src="/images/certif4.png" alt="Certification 4" className="h-14 mx-auto" />
           </div>
         </div>
       </section>

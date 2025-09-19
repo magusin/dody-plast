@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -6,7 +7,7 @@ export default function Header() {
   <div className="max-w-7xl mx-auto h-full px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <img src="/logo.webp" alt="Dody Plast" className="h-12 w-auto" />
+          <Image src="/logo.webp" alt="Dody Plast" className="h-12 w-auto" />
         </Link>
 
         {/* Navigation */}

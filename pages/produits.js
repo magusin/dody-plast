@@ -1,6 +1,7 @@
 import Layout from "../../components/Layout";
 import Hero from "../../components/Hero";
 import Link from "next/link";
+import Image from "next/image";
 
 // Exemple de data locale (tu peux remplacer par un CMS plus tard)
 const produits = [
@@ -17,7 +18,7 @@ export default function Produits() {
         {produits.map((p) => (
           <Link key={p.slug} href={`/produits/${p.slug}`} className="group bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
             <div className="relative h-48">
-              <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-[1.02] transition" />
+              <Image src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-[1.02] transition" />
             </div>
             <div className="p-6">
               <h3 className="text-lg font-bold text-brand-green">{p.title}</h3>
