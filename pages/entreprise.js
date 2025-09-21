@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Building2 } from "lucide-react"; // icône AFD
 import Link from "next/link";
 
+/* eslint-disable react/no-unescaped-entities */
+
 export default function Entreprise() {
   return (
     <Layout
@@ -138,27 +140,27 @@ export default function Entreprise() {
       </section>
 
       <section className="max-w-7xl mx-auto px-6 py-8">
-  <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6 text-center">
-    Nous trouver
-  </h2>
-  <div className="w-full h-[400px] rounded-xl overflow-hidden shadow-lg mb-8">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5499.616318817699!2d0.8908483766482252!3d46.43268186830115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fc3c21b26f8ca3%3A0xf656824730159d95!2sDody%20Plast%20SA!5e0!3m2!1sfr!2sfr!4v1758468165810!5m2!1sfr!2sfr"
-      allowFullScreen
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-      className="w-full h-full border-0"
-    ></iframe>
-  </div>
-  <div className="w-full h-[400px] rounded-xl overflow-hidden shadow-lg">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.386140021936!2d2.3997725767556464!3d48.85084670123697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67279909df17b%3A0xc318d5371ac2fef5!2s36%20Rue%20des%20Grands%20Champs%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1758468344820!5m2!1sfr!2sfr" 
-  allowfullscreen 
-  loading="lazy" 
-  referrerpolicy="no-referrer-when-downgrade"
-  className="w-full h-full border-0"
-  ></iframe>
-  </div>
-</section>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6 text-center">
+          Nous trouver
+        </h2>
+        <div className="w-full h-[400px] rounded-xl overflow-hidden shadow-lg mb-8">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5499.616318817699!2d0.8908483766482252!3d46.43268186830115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fc3c21b26f8ca3%3A0xf656824730159d95!2sDody%20Plast%20SA!5e0!3m2!1sfr!2sfr!4v1758468165810!5m2!1sfr!2sfr"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-full border-0"
+          ></iframe>
+        </div>
+        <div className="w-full h-[400px] rounded-xl overflow-hidden shadow-lg">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.386140021936!2d2.3997725767556464!3d48.85084670123697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67279909df17b%3A0xc318d5371ac2fef5!2s36%20Rue%20des%20Grands%20Champs%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1758468344820!5m2!1sfr!2sfr"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            className="w-full h-full border-0"
+          ></iframe>
+        </div>
+      </section>
 
     </Layout>
   );

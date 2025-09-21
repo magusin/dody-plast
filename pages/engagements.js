@@ -2,6 +2,8 @@ import Layout from "../components/Layout";
 import Image from "next/image";
 import Link from "next/link";
 
+/* eslint-disable react/no-unescaped-entities */
+
 export default function Engagements() {
   const engagements = [
     {
