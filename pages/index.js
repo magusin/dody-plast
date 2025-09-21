@@ -33,7 +33,7 @@ export default function Home() {
     >
       <Hero
         title="L’INJECTION PLASTIQUE AU SERVICE DE VOS BESOINS"
-        subtitle="Solutions plastiques innovantes et responsables"
+        subtitle="Fabricant français d’emballages depuis 1959, nous mettons toute notre expérience à votre disposition pour vous offrir un service sur mesure adapté à vos contraintes"
         image="/hero.webp"
       />
 
