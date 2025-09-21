@@ -38,7 +38,7 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-8 text-base font-medium">
           {[
             ["Accueil", "/"],
-            ["Notre Entreprise", "/about"],
+            ["Notre Entreprise", "/entreprise"],
             ["Nos Produits", "/produits"],
             ["Engagements", "/engagements"],
             ["Contact", "/contact"],
@@ -76,7 +76,7 @@ export default function Header() {
           <nav className="px-6 py-4 flex flex-col gap-4 text-base font-medium">
             {[
               ["Accueil", "/"],
-              ["Notre Entreprise", "/about"],
+              ["Notre Entreprise", "/entreprise"],
               ["Nos Produits", "/produits"],
               ["Engagements", "/engagements"],
               ["Contact", "/contact"],
