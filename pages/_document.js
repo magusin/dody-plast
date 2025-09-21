@@ -4,9 +4,19 @@ export default function Document() {
   return (
     <Html lang="fr">
       <Head>
-        {/* Ex: <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+(function() {
+  var theme = localStorage.getItem('theme');
+  var useDark = theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  document.documentElement.classList.toggle('dark', useDark);
+})();
+`,
+          }}
+        />
       </Head>
-      <body className="text-gray-900 bg-white">
+      <body>
         <Main />
         <NextScript />
       </body>

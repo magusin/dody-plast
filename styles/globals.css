@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+/* Active `dark:` quand <html class="dark"> (ou un parent .dark) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  @apply bg-gray-50 text-gray-900 transition-colors duration-500;
+}
+
+.dark body {
+  @apply bg-gray-900 text-gray-100;
+}
+
 /* Police système (sobre et lisible). Tu peux charger Google Fonts via _document si besoin. */
 :root { scroll-behavior: smooth; }
 
@@ -13,3 +24,7 @@
 
 /* Petites améliorations d’UX */
 .link-underline:hover { text-decoration: underline; }
+
+html {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
